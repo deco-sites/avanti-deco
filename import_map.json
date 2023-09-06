@@ -1,5 +1,7 @@
 {
   "imports": {
+    "deco-sites/avanti-deco/": "./",
+
     "$store/": "./",
     "apps/": "https://denopkg.com/deco-cx/apps@0.3.5/",
     "deco/": "https://denopkg.com/deco-cx/deco@1.35.5/",
