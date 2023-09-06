@@ -139,6 +139,7 @@ account
 
 ### Adding default assets
 
+
 Open `static` folder and replace `favicon.ico`, `robots.txt` and
 `site.webmanifest` with your own assets
 
