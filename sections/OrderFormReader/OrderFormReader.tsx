@@ -1,3 +1,5 @@
+// this code does not work yet because it runs server side, while the resolver for the orderForm query need the user token
+
 import type { SectionProps } from "$live/mod.ts";
 import { createGraphqlClient } from "apps/utils/graphql.ts";
 
@@ -8,16 +10,16 @@ export async function loader() {
   try {
     const data = await io.query({
       query: `query OrderForm {
-  orderForm @context(provider: "vtex.checkout-graphql") {
-    id
-    clientProfileData {
-      email
-    }
-    items {
-      id
-    }
-  }
-}`,
+                orderForm @context(provider: "vtex.checkout-graphql") {
+                  id
+                  clientProfileData {
+                    email
+                  }
+                  items {
+                    id
+                  }
+                }
+              }`,
     });
     return { data };
   } catch (e) {
