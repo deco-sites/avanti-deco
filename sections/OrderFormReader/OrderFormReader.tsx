@@ -1,3 +1,5 @@
+// this code does not work yet because it runs server side, while the resolver for the orderForm query need the user token
+
 import type { SectionProps } from "$live/mod.ts";
 import { createGraphqlClient } from "apps/utils/graphql.ts";
 
